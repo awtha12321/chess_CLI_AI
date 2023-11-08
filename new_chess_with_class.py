@@ -3,8 +3,8 @@ import sys
 
 
 class ChessGame:
-    BLACK = "\033[30m"
-    WHITE = "\033[37m"
+    BLACK = "\033[34m"
+    WHITE = "\033[31m"
     RESET = "\033[0m"
     PIECES_DICT = {"K": "♔", "Q": "♕", "R": "♖", "B": "♗", "P": "♙", "N": "♘"}
 
@@ -13,9 +13,9 @@ class ChessGame:
 
     def turn_piece(self):
         if self.board.turn == chess.WHITE:
-            turn = "white"
+            turn = "red"
         else:
-            turn = "black"
+            turn = "blue"
 
         return turn
 
